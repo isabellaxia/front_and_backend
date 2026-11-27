@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take some time to fill out this form for us.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name:</label>
+        <input required type="text" id="name" name="name" placeholder="e.g., John Doe">
+      </fieldset>
+      <fieldset>
+        <label for="email" id="email-label">Email:</label>
+        <input required type="email" id="email" name="email" placeholder="example@email.com">
+      </fieldset>
+      <fieldset>
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" name="number" min="1" max="10000" placeholder="e.g., 1">
+      </fieldset>
+      <fieldset>
+        <label for="rating">Rate your experience:</label>
+        <select id="dropdown" name="rating">
+          <option value="Poor">Poor</option>
+          <option value="Satisfactory">Satisfactory</option>
+          <option value="Good">Good</option>
+          <option value="Very-Good">Very Good</option>
+          <option selected value="Excellent">Excellent</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Would you come back?</legend>
+        <input type="radio" id="yes" name="confirm" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="confirm" value="no">
+        <label for="no">No</label>
+      </fieldset>
+      <fieldset>
+        <legend>What was your favorite part? (Click all that apply)</legend>
+        <input type="checkbox" id="food" name="food" value="food">
+        <label for="food">Food</label>
+        <input type="checkbox" id="activities" name="activities" value="activities">
+        <label for="activities">Activities</label>
+        <input type="checkbox" id="staff" name="staff" value="staff">
+        <label for="staff">Staff</label>
+        <input type="checkbox" id="atmosphere" name="atmosphere" value="atmosphere">
+        <label for="atmosphere">Atmosphere</label>
+        <input type="checkbox" id="entertainment" name="entertainment" value="entertainment">
+        <label for="entertainment">Entertainment</label>
+        <input type="checkbox" id="other" name="other" value="other">
+        <label for="other">Other</label>
+      </fieldset>
+      <fieldset>
+        <legend>Any questions, comments, or concerns?</legend>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..."></textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit Form</button>
+    </form>
+  </body>
+</html>
